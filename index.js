@@ -1,6 +1,6 @@
-import Discord from 'discord.js';
-import path from 'path';
-import fs from 'fs';
+Discord = require('discord');
+path = require('path');
+fs = require('fs');
 
 const client = new Discord.Client();
 // const config = require('./config.json');
