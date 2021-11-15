@@ -1,0 +1,11 @@
+module.exports = {
+  commands: [''],
+  expectedArgs: '',
+  permissionError: '',
+  minArgs: 0,
+  maxArgs: 0,
+  callback: (message, arguments, text) => {
+  },
+  permissions: '',
+  requiredRoles: [],
+}
