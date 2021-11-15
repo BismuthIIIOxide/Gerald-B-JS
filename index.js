@@ -1,6 +1,6 @@
-Discord = require('discord');
-path = require('path');
-fs = require('fs');
+const Discord = require('discord.js');
+const path = require('path');
+const fs = require('fs');
 
 const client = new Discord.Client();
 // const config = require('./config.json');
