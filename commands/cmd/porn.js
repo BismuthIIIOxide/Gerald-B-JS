@@ -1,4 +1,4 @@
-import fetch from 'node-fetch';
+const fetch = require('node-fetch');
 const r = /http(.+?)\"/
 function getRandomURL(G = false) {
   let URL = (G ? "https://www.pornhub.com/gay/random" : "https://www.pornhub.com/random")
