@@ -3,7 +3,7 @@ import path from 'path';
 import fs from 'fs';
 
 const client = new Discord.Client();
-const config = require('./config.json');
+// const config = require('./config.json');
 client.on('ready', () => {
     console.log("################################\nSUCK MY NUTS!\n################################");
 
@@ -25,10 +25,8 @@ client.on('ready', () => {
     readCommands("commands")
 
 })
-client.on("message", async (message) => {
-    require("./events/message")(client, message);
-});
-client.login(config.token)
+
+client.login(process.env.TOKEN)
 
 // command(client, "ping", (message) => {
 //     message.channel.send("yo");
