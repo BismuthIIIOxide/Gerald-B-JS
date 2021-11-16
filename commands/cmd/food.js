@@ -1,6 +1,3 @@
-// HOLY FUCKING SHIT FINALLY
-// this took me way too fucking long oh my god
-// i should probably learn more js, but i think the basics of it are fine for now
 const fetch = require('node-fetch');
 
 module.exports = {
