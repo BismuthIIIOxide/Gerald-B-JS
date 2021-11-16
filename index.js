@@ -13,7 +13,7 @@ client.on("message", async (message) => {
     require("./events/message")(client, message);
 });
 
-client.login(process.env.TOKEN)
+client.login("NDA5NDYyODQzODU1ODYzODE4.YQoRTg.tY-Q_2_5lNJTVgJnOyZkN3yHfss")
 
 // command(client, "ping", (message) => {
 //     message.channel.send("yo");
