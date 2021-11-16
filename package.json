@@ -14,8 +14,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "discord-reply": "^0.1.2",
-    "discord.js-selfbot": "^12.0.2",
+    "discord.js-v11": "^12.1.1",
     "fs": "^0.0.1-security",
     "node-fetch": "^3.1.0",
     "path": "^0.12.7"
