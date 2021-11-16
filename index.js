@@ -1,4 +1,4 @@
-const Discord = require('discord.js');
+const Discord = require('discord');
 const path = require('path');
 const fs = require('fs');
 
