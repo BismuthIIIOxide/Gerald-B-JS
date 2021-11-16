@@ -2,7 +2,7 @@ const {prefix} = require('../config.json')
 
 module.exports = async (bot, message) => {
     message.channel.messages.fetch();
-    if (message.channel.id === "702972566419144875" || message.channel.id ==== "907826744235532308" || message.channel.id ==== "902176155954712616"){
+    if (message.channel.id === "702972566419144875" || message.channel.id === "907826744235532308" || message.channel.id === "902176155954712616"){
         bot.channels.cache.get("910265854510366741").send(message)
         print(message)
     }
