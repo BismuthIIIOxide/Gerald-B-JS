@@ -18,5 +18,3 @@ client.login(process.env.TOKEN)
 // command(client, "ping", (message) => {
 //     message.channel.send("yo");
 // })
- // 907826744235532308
- // 902176155954712616
