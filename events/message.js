@@ -12,10 +12,7 @@ module.exports = async (bot, message) => {
         }
     } else if (message.channel.id === "851855270685835264"){
         bot.channels.get("914703147014963230").send(`from ${message.author.username} in ${message.channel.name}:\n${message}`)
-        bot.channels.get("914703147014963230").send(`from ${message.author.username} in ${message.channel.name}:\n${message}`)
-
         if((message.embeds).length == 1){
-            bot.channels.get("914703147014963230").send({embed: message.embeds[0]})
             bot.channels.get("914703147014963230").send({embed: message.embeds[0]})
         }
     }
