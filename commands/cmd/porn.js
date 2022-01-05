@@ -24,7 +24,7 @@ function getRandomURL(G = false) {
 }
 
 module.exports = {
-  commands: ['porn', 'pron'],
+  commands: ['pornj', 'pronj'],
   expectedArgs: '<gay, yes, true>',
   minArgs: 0,
   maxArgs: 1,
