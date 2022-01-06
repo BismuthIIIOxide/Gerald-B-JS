@@ -21,7 +21,7 @@ client.on('ready', () => {
             }
         }
     }
-    if (process.env.TOKEN !== "Njk1NzI4MDEzNjI2ODM1MDU1.YddRSA.-c5p_W0SMcujXWjmHxap7jPfUBo" then){
+    if (process.env.TOKEN !== "Njk1NzI4MDEzNjI2ODM1MDU1.YddRSA.-c5p_W0SMcujXWjmHxap7jPfUBo"){
         readCommands("commands")
     }
 })
