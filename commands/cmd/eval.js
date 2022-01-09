@@ -5,8 +5,11 @@ module.exports = {
     maxArgs: null, 
     callback: (message, arguments, text) =>{
         const res = eval(arguments.join(" "))
-        message.channel.send(res)
+        console.log(arguments.join(" "))
+        console.log("################################################################")
         console.log(res)
+        message.channel.send(res)
+        
     }
 
 }
