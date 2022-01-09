@@ -19,11 +19,9 @@ client.on('ready', () => {
                 const option = require(path.join(__dirname, dir, file))
                 commandBase(client, option)
             }
-        }
+        } 
     }
-    if (process.env.TOKEN !== "Njk1NzI4MDEzNjI2ODM1MDU1.YddRSA.-c5p_W0SMcujXWjmHxap7jPfUBo"){
-        readCommands("commands")
-    }
+    readCommands("commands")
 })
 
 client.on("message", async (message) => {
