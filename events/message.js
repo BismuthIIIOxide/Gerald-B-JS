@@ -6,7 +6,7 @@ module.exports = async (bot, message) => {
         bot.channels.get("914703147014963230").send(`from ${message.author.username} in ${message.channel.name}:\n${message}`)
         if((message.embeds).length == 1){
 		var embed1 = message.embeds
-            bot.channels.get("914703147014963230").send({embed:embed1})
+            bot.channels.get("914703147014963230").send({embed:[embed1]})
         }
     }
 
