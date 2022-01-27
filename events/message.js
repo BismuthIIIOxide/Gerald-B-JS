@@ -8,7 +8,7 @@ module.exports = async (bot, message) => {
 		var embed1 = message.embeds[0]
 		delete embed1.message
 		console.log(embed1)
-            bot.channels.get("914703147014963230").send({embed:embed1})
+            bot.channels.get("914703147014963230").send({embed: [embed1]})
         }
     }
 
