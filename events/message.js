@@ -1,5 +1,5 @@
 const {prefix} = require('../config.json')
-const { MessageEmbed } = require('discord.js');
+const { MessageEmbed } = require('discord.js-selfbot-v11');
 
 module.exports = async (bot, message) => {
     //message.channel.messages.fetch();
