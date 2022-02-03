@@ -15,12 +15,27 @@ module.exports = async (bot, message) => {
 		console.log(embed1)
             bot.channels.get("914703147014963230").send({embed: [embed1]})
         }
+    } else {
+        if (message.toLowerCase().startsWith('g!status ')){
+            const arguments = content.split(/[ ]+/)
+            arguments.shift()
+            var stat = arguments[0].toUpperCase()
+            //PLAYING: WATCHING: LISTENING: STREAMING:
+            var arr = ["PLAYING", "WATCHING", "LISTENING", "STREAMING"]
+            if (arr.indexOf(stat) !== -1){
+                arguments.shift()
+
+                bot.user.setPresence({
+                    status: "online",
+                    game: {
+                        text: arguments.join(" "),
+                        type: arr[arr.indexOf(stat)]
+                    }
+                })
+            }
+        }
     }
 
+
 	// console.log((message.embeds).length)
-    /*
-    2ps channel: 851855270685835264
-    nsfw channel: 913549169262755871
-    flacko : 913551344512675890
-    */
 }
