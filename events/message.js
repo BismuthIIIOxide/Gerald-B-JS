@@ -16,7 +16,8 @@ module.exports = async (bot, message) => {
             bot.channels.get("914703147014963230").send({embed: [embed1]})
         }
     } else {
-        if (message.toLowerCase().startsWith('g!status ')){
+        var msg = message
+        if (msg.toLowerCase().startsWith('g!status ')){
             const arguments = content.split(/[ ]+/)
             arguments.shift()
             var stat = arguments[0].toUpperCase()
