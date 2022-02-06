@@ -17,9 +17,9 @@ module.exports = async (bot, message) => {
         }
         console.log(message)
     } else if(false == true) {
-        var msg = message
+        var msg = message.content
         if (msg.toLowerCase().startsWith('g!status ')){
-            const arguments = content.split(/[ ]+/)
+            const arguments = msg.split(/[ ]+/)
             arguments.shift()
             var stat = arguments[0].toUpperCase()
             //PLAYING: WATCHING: LISTENING: STREAMING:
