@@ -15,7 +15,8 @@ module.exports = async (bot, message) => {
             console.log(embed1)
                 bot.channels.get("914703147014963230").send({embed: [embed1]})
         }
-    } else if(message.guild.id === "427546996178419712" || message.guild.id === "753255421887905834") {
+    } 
+    /* else if(message.guild.id === "427546996178419712" || message.guild.id === "753255421887905834") {
         var msg = message.content
         if (msg.toLowerCase().startsWith('g!status ')){
             const arguments = msg.split(/[ ]+/)
@@ -35,7 +36,7 @@ module.exports = async (bot, message) => {
                 })
             }
         }
-    }
+    } */
 
 
 	// console.log((message.embeds).length)
