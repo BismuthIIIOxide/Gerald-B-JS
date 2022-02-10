@@ -3,7 +3,6 @@ const {prefix} = require('../config.json')
 module.exports = async (bot, message) => {
     //message.channel.messages.fetch();
     if (message.channel.type === 'dm') {
-        console.log(message)
         if (process.env.ISMAIN === "FALSE"){
             bot.channels.get("941450258045603890").send(`from ${message.author.username}:\n${message}`)
         }else{
