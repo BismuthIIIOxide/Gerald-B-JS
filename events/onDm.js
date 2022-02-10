@@ -4,9 +4,13 @@ module.exports = async (bot, message) => {
     //message.channel.messages.fetch();
     if (message.channel.type === 'dm') {
         console.log(message)
-        bot.channels.get("929566855968981052").send(`from ${message.author.username}:\n${message}`)
-        if((message.embeds).length == 1){
-            bot.channels.get("929566855968981052").send({embed: message.embeds[0]})
+        if (process.env.ISMAIN === "FALSE"){
+            bot.channels.get("941450258045603890").send(`from ${message.author.username}:\n${message}`)
+        }else{
+            bot.channels.get("929566855968981052").send(`from ${message.author.username}:\n${message}`)
+            if((message.embeds).length == 1){
+                bot.channels.get("929566855968981052").send({embed: message.embeds[0]})
+            }
         }
     }
 

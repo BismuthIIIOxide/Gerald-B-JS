@@ -26,9 +26,7 @@ client.on('ready', () => {
 
 client.on("message", async (message) => {
     require("./events/message")(client, message);
-    if(process.env.ISMAIN === "TRUE"){ 
-        require("./events/onDm")(client, message);
-    }
+    require("./events/onDm")(client, message);
 });
 
 client.login(process.env.TOKEN)
