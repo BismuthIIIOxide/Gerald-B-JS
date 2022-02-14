@@ -17,7 +17,7 @@ module.exports = async (bot, message) => {
         }
     } 
     else if(message.guild.id === "427546996178419712" || message.guild.id === "753255421887905834") {
-        var msg = message.toLowerCase()
+        var msg = message.content
         if (msg.search(/this/i) != -1){
             bot.channels.get(message.channel.id).send("https://media.discordapp.net/attachments/925876223878508694/942822275189719070/1B0F18A8-E03C-4BB5-AD3C-7A7486BA3E9.png")
         }
