@@ -5,7 +5,7 @@ const fs = require('fs');
 const client = new Discord.Client();
 const config = require('./config.json');
 client.on('ready', () => {
-    console.log("################################\nSUCK MY NUTS!\n################################");
+    console.log(`################################\nSUCK MY NUTS!\n${client.user}\n################################`);
     const BF = 'command-base.js'
     const commandBase = require(`./commands/${BF}`)
     const readCommands = dir => {
@@ -26,7 +26,7 @@ client.on('ready', () => {
 
 client.on("message", async (message) => {
     require("./events/message")(client, message);
-    require("./events/onDm")(client, message);
+    // require("./events/onDm")(client, message);
 });
 
 client.login(process.env.TOKEN)

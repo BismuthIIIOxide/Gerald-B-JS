@@ -1,11 +1,19 @@
 {
   "files": {
+    "commands/cmd/status.js": [
+      {
+        "id": "12feb799-30aa-4fb5-99d2-892b023d9cb0",
+        "line": 8,
+        "version": 1258,
+        "index": 211
+      }
+    ],
     "events/message.js": [
       {
         "id": "01323efb-0da1-4865-b504-917a6b87c766",
-        "line": 46,
-        "version": 799,
-        "index": 1815
+        "line": 25,
+        "version": 1663,
+        "index": 907
       }
     ]
   }

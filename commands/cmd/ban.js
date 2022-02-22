@@ -8,7 +8,6 @@ module.exports = {
         arguments.shift()
         var res = arguments.join(" ")
         
-        message.channel.send(`banned ${user} permanently for reason ${res}`)
+        message.channel.send(`banned ${user} permanently for reason: ${res}`)
     }
-
 }

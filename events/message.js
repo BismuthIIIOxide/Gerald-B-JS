@@ -1,45 +1,23 @@
 const {prefix} = require('../config.json')
-const { MessageEmbed } = require('discord.js-selfbot-v11');
 
 module.exports = async (bot, message) => {
-    //message.channel.messages.fetch();
-    if (message.channel.id === "851855270685835264" || message.channel.id === "702972566419144875"){
-        bot.channels.get("914703147014963230").send(`from ${message.author.username} in ${message.channel.name}:\n${message}`)
-        if((message.embeds).length == 1){
-            const msg = message.embeds[0]
-            const embed1 = new MessageEmbed()
-                .setColor("#0099ff")
-                .setTitle(msg.title)
-                .setURL(msg.url)
-                .setDescription(msg.description)
-            console.log(embed1)
-                bot.channels.get("914703147014963230").send({embed: [embed1]})
-        }
-    } 
-    else if(message.guild.id === "427546996178419712" || message.guild.id === "753255421887905834") {
+    if( (message.guild.id === "427546996178419712" || message.guild.id === "753255421887905834") && message.author.id != bot.user.id) {
         var msg = message.content
         if (msg.search(/this/i) != -1){
+            console.log(`${message.author.username} got this`)
             bot.channels.get(message.channel.id).send("https://imgur.com/aBUCsv2")
         }
-        /*if (msg.toLowerCase().startsWith('g!status ')){
-            const arguments = msg.split(/[ ]+/)
-            arguments.shift()
-            var stat = arguments[0].toUpperCase()
-            //PLAYING: WATCHING: LISTENING: STREAMING:
-            var arr = ["PLAYING", "WATCHING", "LISTENING", "STREAMING"]
-            if (arr.indexOf(stat) !== -1){
-                arguments.shift()
-
-                bot.user.setPresence({
-                    status: "online",
-                    game: {
-                        text: arguments.join(" "),
-                        type: arr[arr.indexOf(stat)]
-                    }
-                })
-            }
-        }*/
-    } 
+    }
+    if (
+        message.author.id === "829844831710609441" || // Jerry3
+        message.author.id === "878159432482177045" || // Meca
+        message.author.id === "367714419179913216" // Mako
+    ){
+        var chance = Math.floor(Math.random()*(3-1+1)+1)
+        if (chance==3){
+            message.channel.send("stfu")
+        }
+    }
 
 
 	// console.log((message.embeds).length)

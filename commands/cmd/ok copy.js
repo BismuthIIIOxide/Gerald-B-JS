@@ -9,7 +9,6 @@ module.exports = {
         var user1 = arguments[0]
         var user2 = arguments[1]
         
-
         axios.get('https://nekobot.xyz/api/imagegen', {
             params: {
                 type: 'ship',
